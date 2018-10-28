@@ -1,0 +1,18 @@
+{
+  "countryCode": [
+    "TEST"
+  ],
+  "updatedBy": "automationTest@test.com",
+  "startDate": "2017-06-21T23:00:45.627Z",
+  "message": [{
+    "language": "en-US",
+    "button": "You want to learn more...",
+    "link": "https://www.microsoft.com",
+    "title": "Automation Run 0",
+    "body": "A long body message for NightWatch automation run"
+  }],
+  "createdBy": "automationTest@test.com",
+  "productId": "b35a2e61-2992-4464-8ec7-c648d0d17765",
+  "type": "alert",
+  "productName": "Windows Ultimate 7"
+}

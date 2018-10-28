@@ -1,0 +1,18 @@
+{
+  "countryCode": [
+    "TEST"
+  ],
+  "updatedBy": "automationTest@test.com",
+  "startDate": "2017-06-22T23:00:45.627Z",
+   "message": [{
+    "language": "en-US",
+    "button": "You want to learn more...",
+    "link": "https://www.microsoft.com",
+    "title": "Automation Run 0",
+    "body": "A long body message for NightWatch automation run"
+  }],
+  "createdBy": "uat.admin@accordogrouplimited.onmicrosoft.com",
+  "productId": "1167a94d-ca7d-4f51-80ec-63f35e84b606",
+  "type": "alert",
+  "productName": "Windows Server User CAL 2012"
+}

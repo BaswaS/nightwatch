@@ -1,0 +1,18 @@
+{
+  "countryCode": [
+    "TEST"
+  ],
+  "updatedBy": "automationTest@test.com",
+  "startDate": "2017-06-23T23:00:45.627Z",
+  "message": [{
+    "language": "en-US",
+    "button": "You want to learn more...",
+    "link": "https://www.microsoft.com",
+    "title": "Automation Run 0",
+    "body": "A long body message for NightWatch automation run"
+  }],
+  "createdBy": "uat.admin@accordogrouplimited.onmicrosoft.com",
+  "productId": "ff3ef460-1e3e-4f23-81b6-948841cba02f",
+  "type": "info",
+  "productName": "Windows Professional 10"
+}

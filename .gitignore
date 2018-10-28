@@ -1,0 +1,9 @@
+node_modules/
+.idea/
+reports*
+phantomjsdriver.log
+debug.log
+npm-debug.log*
+.vscode/
+.history/
+

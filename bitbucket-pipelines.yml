@@ -1,0 +1,65 @@
+image: grme/nightwatch-chrome-firefox:1.1.0
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - node
+        script:
+          - npm install
+          - npm run lint
+          - npm run cloudTest uat test:quickSmoke
+          - npm run cloudTest uat test:smokeRegression
+  custom:
+    run-nightwatch-uat-quickSmoke:
+      - step:
+         caches:
+           - node
+         script:
+           - npm install
+           - npm run cloudTest uat test:quickSmoke
+    run-nightwatch-uat:
+      - step:
+         caches:
+           - node
+         script:
+           - npm install
+           - npm run cloudTest uat test:quickSmoke
+           - npm run cloudTest uat test:smokeRegression
+           - npm run cloudTest uat browserstack:uat
+    run-nightwatch-browserstack-uat:
+      - step:
+         caches:
+          - node
+         script:
+          - npm install
+          - npm run cloudTest uat browserstack:uat
+    run-nightwatch-uat-flaky:
+      - step:
+          caches:
+            - node
+          script:
+           - npm run cloudTest uat test:flaky
+    run-nightwatch-prod:
+      - step:
+         caches:
+          - node
+         script:
+          - npm install
+          - npm run cloudTest prod test-prod:quickSmoke
+          - npm run cloudTest prod test-prod:smoke
+          - npm run cloudTest uat browserstack:prod
+    run-nightwatch-browserstack-prod:
+      - step:
+         caches:
+          - node
+         script:
+          - npm install
+          - npm run cloudTest prod browserstack:prod
+    run-nightwatch-prod-quickProdLangSmoke:
+      - step:
+         caches:
+          - node
+         script:
+          - npm install
+          - npm run cloudTest prod test-prod:langSmoke

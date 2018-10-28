@@ -1,0 +1,16 @@
+{
+  "countryCode": [
+    "TEST"
+  ],
+  "updatedBy": "automationTest@test.com",
+  "startDate": "2017-06-24T23:00:45.627Z",
+   "message": [{
+   "language": "en-US",
+    "title": "Automation Run 0",
+    "body": "A long body message for NightWatch automation run"
+  }],
+  "createdBy": "uat.admin@accordogrouplimited.onmicrosoft.com",
+  "productId": "5e0eb19e-034d-4a6d-b14a-ad51ec2650a2",
+  "type": "info",
+  "productName": "Windows Server Datacenter 2016"
+}
